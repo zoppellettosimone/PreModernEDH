@@ -1,0 +1,28 @@
+{
+  "name": "testscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkCardLegality.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildExe": "pkg . --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.4"
+  },
+  "bin": "checkCardLegality.js",
+  "pkg": {
+    "scripts": "checkCardLegality.js",
+    "targets": [
+      "node14-linux-x64",
+      "node14-macos-x64",
+      "node14-win-x64"
+    ]
+  },
+  "dependencies": {
+    "pkg": "^5.8.1"
+  }
+}
